@@ -1,0 +1,12 @@
+version: 2
+updates:
+  - package-ecosystem: npm
+    open-pull-requests-limit: 100
+    directory: "/"
+    schedule:
+      interval: daily
+    commit-message:
+      include: scope
+      prefix: chore
+    reviewers:
+      - oadpoaw
