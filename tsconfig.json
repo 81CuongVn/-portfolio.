@@ -13,6 +13,7 @@
         "resolveJsonModule": true,
         "isolatedModules": true,
         "esModuleInterop": true,
+        "skipLibCheck": true,
         "composite": false,
         "declaration": false,
         "declarationMap": false,
