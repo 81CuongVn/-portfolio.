@@ -1,4 +1,5 @@
 import React from 'react';
+import Typical from 'react-typical';
 import Particles from '../components/Particles';
 import Content from '../components/Content';
 import Meta from '../components/Meta';
@@ -15,20 +16,34 @@ const Home: React.FC = () => {
         <img src="photo.webp" alt="saturn" className={styles['photo']} />
       </div>
       <div className={styles['center']}>
-        <h1 className={styles['name']}>Undefine Development</h1>
+        <h1 className={styles['name']}>
+          <span className={colors['text-blue']}>Undefine</span>{' '}
+          <span className={colors['text-green']}>Development</span>
+        </h1>
       </div>
       <div className={styles['center']}>
         <p className={styles['description']}>
-          Hello! I am an
-          <i>
-            <b className={colors['text-yellow']}> ICT Student</b>,
-            <b className={colors['text-blue']}> Full Stack Web Developer</b>,
-            <b className={colors['text-green']}> Open Sourcerer</b>, and
-            <b className={colors['text-red']}> Systems Administrator</b>
-          </i>{' '}
-          <br />
-          with a flair for creating elegant solutions in the least amount of
-          time and creative cloud computing
+          <Typical
+            steps={[
+              1000,
+              'Welcome to my portfolio !',
+              1000,
+              'I am an ICT Student',
+              1000,
+              'I am a Full Stack Web Developer',
+              1000,
+              'I am an Open Sourcerer',
+              1000,
+              'I am a Systems Administrator',
+              1000,
+              'Thank you for visiting !',
+              1000,
+            ]}
+            loop={Infinity}
+            wrapper="h3"
+          />
+          <br />A Passionate Programmer with a flair for creating elegant
+          solutions in the least amount of time and creative cloud computing
         </p>
       </div>
     </Content>

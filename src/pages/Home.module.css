@@ -29,7 +29,6 @@
 
 .name {
   text-align: center;
-  margin-bottom: 1rem;
   animation: Name 750ms ease-in;
 }
 
@@ -48,9 +47,9 @@
 }
 
 .description {
-  margin-top: 3rem;
   max-width: 75%;
   text-align: center;
+  margin-top: 1rem;
   animation: Description 1s ease-in;
 }
 

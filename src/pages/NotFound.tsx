@@ -7,12 +7,7 @@ import Meta from '../components/Meta';
 export default function NotFound() {
   return (
     <Content>
-      <Meta
-        title="Not Found"
-        description="This Page Not Found"
-        noindex
-        nofollow
-      />
+      <Meta title="404 Not Found" noindex nofollow />
       <Particles particles={['4', '0']} />
     </Content>
   );

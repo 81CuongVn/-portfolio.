@@ -1,0 +1,107 @@
+.info {
+  display: block;
+  animation: Info 500ms ease-in 1;
+}
+
+@keyframes Info {
+  0% {
+    opacity: 0;
+    transform: translateX(-5rem);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.title {
+  color: var(--red);
+  margin-left: 1rem;
+  transition: all 1s ease;
+}
+
+.description {
+  margin-left: 1rem;
+  animation: Description 800ms ease-out 1;
+}
+
+.container {
+  margin-top: 3rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  --stagger-delay: 200ms;
+}
+
+.card {
+  display: block;
+  min-width: 300px;
+  max-width: 400px;
+  margin: 1rem;
+  background-color: #212121;
+  padding: 1rem;
+  border-radius: 0.65rem;
+  transition: all 250ms ease-in;
+  animation: Pop 1s ease-out;
+  animation-iteration-count: 1;
+  animation-fill-mode: backwards;
+}
+
+.card:nth-child(1) {
+  animation-delay: calc(1 * var(--stagger-delay));
+}
+
+.card:nth-child(2) {
+  animation-delay: calc(2 * var(--stagger-delay));
+}
+
+.card:nth-child(3) {
+  animation-delay: calc(3 * var(--stagger-delay));
+}
+
+.card:nth-child(4) {
+  animation-delay: calc(4 * var(--stagger-delay));
+}
+
+.card:nth-child(5) {
+  animation-delay: calc(5 * var(--stagger-delay));
+}
+
+.card:nth-child(6) {
+  animation-delay: calc(6 * var(--stagger-delay));
+}
+
+@keyframes Pop {
+  0% {
+    opacity: 0;
+    transform: scale(0.7) translateY(12rem);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1) translateY(0);
+  }
+}
+
+.card:hover {
+  cursor: pointer;
+  margin-top: 0;
+  margin-bottom: 2rem;
+  box-shadow: 3px 3px 3px 3px black;
+  filter: brightness(1.2);
+}
+
+.card-title {
+  margin-bottom: 1rem;
+}
+
+.card-image {
+  max-width: 64px;
+  min-height: 64px;
+  border-radius: 50%;
+  position: absolute;
+}
+
+.card-body {
+  margin-left: 5rem;
+}

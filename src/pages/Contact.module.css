@@ -1,0 +1,79 @@
+.info {
+  display: block;
+  animation: Info 500ms ease-in 1;
+}
+
+@keyframes Info {
+  0% {
+    opacity: 0;
+    transform: translateX(-5rem);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.title {
+  color: var(--yellow);
+  margin-left: 1rem;
+  transition: all 1s ease;
+}
+
+.description {
+  margin-left: 1rem;
+  animation: Description 800ms ease-out 1;
+}
+
+.container {
+  margin-top: 3rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  --stagger-delay: 200ms;
+}
+
+.card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-width: 250px;
+  max-width: 300px;
+  margin: 1rem;
+  background-color: var(--gray);
+  padding: 1rem;
+  border-radius: 0.65rem;
+  transition: all 250ms ease-in;
+  animation: Pop 1s ease-out;
+  animation-iteration-count: 1;
+  animation-fill-mode: backwards;
+}
+
+.card:hover {
+  cursor: pointer;
+  filter: brightness(1.2);
+}
+
+.card:nth-child(1) {
+  animation-delay: calc(1 * var(--stagger-delay));
+}
+
+.card:nth-child(2) {
+  animation-delay: calc(2 * var(--stagger-delay));
+}
+
+.card:nth-child(3) {
+  animation-delay: calc(3 * var(--stagger-delay));
+}
+
+@keyframes Pop {
+  0% {
+    opacity: 0;
+    transform: scale(0.7) translateY(8rem);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1) translateY(0);
+  }
+}

@@ -1,7 +1,29 @@
+.container {
+  min-height: 80vh;
+  position: relative;
+}
+
+@keyframes Info {
+  0% {
+    opacity: 0;
+    transform: translateX(-5rem);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.info {
+  display: block;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  animation: Info 500ms ease-in 1;
+}
 
 .title {
   color: var(--green);
-  margin-top: 8rem;
   margin-left: 1rem;
   transition: all 1s ease;
   animation: Title 230ms ease-in;
@@ -17,7 +39,6 @@
 }
 
 .description {
-  margin-top: 12rem;
   margin-left: 1rem;
   animation: Description 500ms ease-out;
 }
@@ -31,22 +52,9 @@
   }
 }
 
-.container {
-  padding: 1rem;
-  display: flex;
-  align-items: center;
-  position: static;
-}
-
-.info {
-  margin-top: auto;
-  display: block;
-  width: 50%;
-}
-
 .canvas {
-  min-height: 70vh;
-  animation: Canvas 4.5s ease-in;
+  min-height: 79vh;
+  animation: Canvas 3s ease-in;
 }
 
 @keyframes Canvas {

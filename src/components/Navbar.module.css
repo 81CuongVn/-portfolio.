@@ -1,10 +1,8 @@
 .nav {
-  height: 45px;
-  padding: 0.5rem;
+  height: 50px;
   max-width: 100%;
   background-color: var(--bg-accent);
   animation: Nav 100ms ease-out;
-  align-items: center;
 }
 
 @keyframes Nav {
@@ -26,13 +24,16 @@
 
 .item {
   padding: 0.8rem;
-  margin-left: 1rem;
-  max-height: calc(45px * 0.8);
-  background-color: var(--gray);
-  border-radius: 0.8rem;
-  transition: filter 230ms ease-in-out;
+  max-height: 100%;
+  transition: all 230ms ease-in-out;
   animation-name: Item;
   animation-timing-function: ease-out;
+  border-bottom: 2px solid var(--bg-accent);
+}
+
+.item:hover {
+  background-color: var(--gray);
+  border-bottom: 2px solid var(--green);
 }
 
 .item:nth-child(1) {
@@ -66,10 +67,7 @@
   }
 }
 
-.item:hover {
-  filter: brightness(1.5);
-}
-
 .active {
-  filter: brightness(1.2);
+  border-bottom: 2px solid var(--gray);
+  filter: brightness(-0.5);
 }
