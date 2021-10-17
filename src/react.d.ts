@@ -2,6 +2,8 @@
 /// <reference types="react" />
 /// <reference types="react-dom" />
 
+declare module '*.css';
+
 declare module '*.module.css' {
   const src: { [key: string]: string };
   export default src;

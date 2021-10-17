@@ -1,19 +1,28 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { Suspense, lazy } from 'react';
+import { Switch, Route } from 'react-router-dom';
+import Navbar from './components/Navbar';
+import NotFound from './pages/NotFound';
+
+const Home = lazy(() => import('./pages/Home'));
+const Skills = lazy(() => import('./pages/Skills'));
+const Discord = lazy(() => import('./pages/redirects/Discord'));
+const Github = lazy(() => import('./pages/redirects/Github'));
 
 export default function App() {
-    return (
-        <div className="App">
-            <header className="App-header">
-                <img src={logo} className="App-logo" alt="logo" />
-                <p>
-                    Edit <code>src/App.tsx</code> and save to reload.
-                </p>
-                <a className="App-link" href="https://reactjs.org" target="_blank" rel="noopener noreferrer">
-                    Learn React
-                </a>
-            </header>
-        </div>
-    );
+  return (
+    <Suspense fallback={null}>
+      <Navbar />
+      <Switch>
+        <Route exact path="/" component={Home} />
+
+        <Route path="/skills" component={Skills} />
+        <Route path="/works" />
+        <Route path="/contact" />
+        <Route path="/discord" component={Discord} />
+        <Route path="/github" component={Github} />
+
+        <Route path="*" component={NotFound} />
+      </Switch>
+    </Suspense>
+  );
 }

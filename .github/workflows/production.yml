@@ -1,0 +1,77 @@
+name: Production
+
+on:
+  release:
+    types: [created]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - uses: actions/setup-node@v2
+        with:
+          node-version: 16
+
+      - uses: actions/cache@v2
+        id: cache
+        with:
+          path: |
+            ~/.npm
+            **/node_modules
+          key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
+          restore-keys: |
+            ${{ runner.os }}-node-
+
+      - name: Install Dependencies
+        if: ${{ steps.cache.outputs.cache-hit != 'true' }}
+        run: npm install
+
+      - name: Build
+        run: npm run build
+
+      - name: Zip Build Artifacts
+        run: tar -cvzf build.tar.gz dist netlify
+
+      - name: Upload Build Artifacts
+        uses: actions/upload-artifact@v2
+        with:
+          name: builds
+          path: build.tar.gz
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment: Production
+    steps:
+      - uses: actions/checkout@v2
+        with:
+          ref: production
+
+      - name: Clean Directory
+        run: rm -rf *
+
+      - name: Download Build Artifacts
+        uses: actions/download-artifact@v2
+        with:
+          name: builds
+
+      - name: Unzip Build Artifacts
+        run: tar -xvf build.tar.gz
+
+      - name: Delete build.tar.gz
+        run: rm build.tar.gz
+
+      - name: Copy Netlify Configuration
+        run: cp netlify/* dist
+
+      - name: Delete Netlify Directory
+        run: rm -rf netlify
+
+      - name: Push to Production Branch
+        run: |
+          git config user.name github-actions
+          git config user.email github-actions@github.com
+          git add .
+          git commit -m "dist files"
+          git push

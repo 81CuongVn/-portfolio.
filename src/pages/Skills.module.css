@@ -1,0 +1,59 @@
+
+.title {
+  color: var(--green);
+  margin-top: 8rem;
+  margin-left: 1rem;
+  transition: all 1s ease;
+  animation: Title 230ms ease-in;
+}
+
+@keyframes Title {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.description {
+  margin-top: 12rem;
+  margin-left: 1rem;
+  animation: Description 500ms ease-out;
+}
+
+@keyframes Description {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.container {
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  position: static;
+}
+
+.info {
+  margin-top: auto;
+  display: block;
+  width: 50%;
+}
+
+.canvas {
+  min-height: 70vh;
+  animation: Canvas 4.5s ease-in;
+}
+
+@keyframes Canvas {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
