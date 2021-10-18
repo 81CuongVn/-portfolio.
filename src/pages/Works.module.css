@@ -72,6 +72,10 @@
   animation-delay: calc(6 * var(--stagger-delay));
 }
 
+.card:nth-child(6) {
+  animation-delay: calc(7 * var(--stagger-delay));
+}
+
 @keyframes Pop {
   0% {
     opacity: 0;
