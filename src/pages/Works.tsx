@@ -95,6 +95,13 @@ const Works: React.FC = () => {
           role="Former Bot Developer"
           date="Aug 2020 - Nov 2020"
         />
+        <Card
+          href="https://www.youtube.com/c/ZeroSync"
+          logo="https://cdn.discordapp.com/guilds/729919498076946463/users/603948445362946084/avatars/a_2933a8366e6565c37159e8b482194175.gif?size=256"
+          title="ZeroSync Content Creator"
+          role="Manager"
+          date="May 2021 - Present"
+        />
       </div>
     </Content>
   );

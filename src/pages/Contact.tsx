@@ -50,8 +50,7 @@ const Contact: React.FC = () => {
         </h1>{' '}
         <br />
         <small className={styles['description']}>
-          If you ever need to contact me for business, or just to say hello.
-          This page has my Email, Discord, Github, etc.
+          If you ever need to contact me for business, or just to say hello, here is my Email, Discord, and Github.
         </small>
       </div>
       <div className={styles['container']}>
@@ -60,7 +59,7 @@ const Contact: React.FC = () => {
           value="Click Me!"
           href="https://discord.gg/7Xuy3wgWZu"
         />
-        <Card title="Email" value="oadpoaw@gmail.com" />
+        <Card title="Email" value="business@undefine-dev.tech" />
         <Card
           title="Github"
           value="Click Me!"
