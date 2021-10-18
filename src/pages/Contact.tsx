@@ -50,7 +50,8 @@ const Contact: React.FC = () => {
         </h1>{' '}
         <br />
         <small className={styles['description']}>
-          If you ever need to contact me for business, or just to say hello, here is my Email, Discord, and Github.
+          If you ever need to contact me for business, or just to say hello,
+          here is my Email, Discord, and Github.
         </small>
       </div>
       <div className={styles['container']}>
