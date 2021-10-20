@@ -52,19 +52,19 @@ const Works: React.FC = () => {
       </div>
       <div className={styles['container']}>
         <Card
-          href="https://securitybot.xyz"
-          logo="https://securitybot.xyz/icon.png"
-          title="Security Bot"
-          role="Former Web Developer"
-          date="Oct 2020 - Dec 2020"
-        />
-        <Card
           href="https://xetha-bot.me/"
           logo="https://xetha-bot.me/logo.webp"
           title="Xetha"
           subtitle="WIP"
-          role="Owner / Developer"
+          role="CEO / Founder"
           date="Dec 2020 - Present"
+        />
+        <Card
+          href="https://www.youtube.com/c/ZeroSync"
+          logo="https://cdn.discordapp.com/guilds/729919498076946463/users/603948445362946084/avatars/a_2933a8366e6565c37159e8b482194175.gif?size=256"
+          title="ZeroSync Content Creator"
+          role="Manager"
+          date="May 2021 - Present"
         />
         <Card
           href="https://levely.me"
@@ -74,33 +74,25 @@ const Works: React.FC = () => {
           date="Apr 2021"
         />
         <Card
-          href="https://discord.gg/qYxn4BS"
-          logo="https://pbs.twimg.com/profile_images/1422090458675679235/aIbz-uKK.jpg"
-          title="Trimix's Discord"
-          role="Former Bot Developer"
-          date="July 2020 - Dec 2020"
+          href="https://securitybot.xyz"
+          logo="https://securitybot.xyz/icon.png"
+          title="Security Bot"
+          role="Web Developer"
+          date="Sept 2020 - Nov 2020"
         />
         <Card
-          href="https://www.mc-market.org/threads/659497/"
-          logo="https://i.pinimg.com/originals/40/68/fb/4068fba617e6a50972b821684fed9ee6.png"
-          title="Payday Bot"
-          subtitle="SOLD"
-          role="Creator / Developer"
-          date="Apr 2021"
+          href="https://www.youtube.com/channel/UCJ8RtaYEROGEMdyUAqgO-9g"
+          logo="https://pbs.twimg.com/profile_images/1422090458675679235/aIbz-uKK.jpg"
+          title="Trimix Content Creator"
+          role="Management / Developer"
+          date="July 2020 - Dec 2020"
         />
         <Card
           href="https://discord.com/invite/auc"
           logo="https://play-lh.googleusercontent.com/8ddL1kuoNUB5vUvgDVjYY3_6HwQcrg1K2fd_R8soD-e2QYj8fT9cfhfh3G0hnSruLKec"
           title="Among Us Community"
-          role="Former Bot Developer"
+          role="Developer"
           date="Aug 2020 - Nov 2020"
-        />
-        <Card
-          href="https://www.youtube.com/c/ZeroSync"
-          logo="https://cdn.discordapp.com/guilds/729919498076946463/users/603948445362946084/avatars/a_2933a8366e6565c37159e8b482194175.gif?size=256"
-          title="ZeroSync Content Creator"
-          role="Manager"
-          date="May 2021 - Present"
         />
       </div>
     </Content>
