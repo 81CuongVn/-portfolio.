@@ -42,16 +42,16 @@ export default function Meta(iprops: Partial<Props>) {
     <Helmet>
       <meta property="theme-color" content={props.themeColor} />
       <meta name="title" content={props.title} />
-      <meta name="description" content={props.description} />
       <meta property="og:title" content={props.title} />
       <meta property="og:description" content={props.description} />
       <meta property="og:image" content={props.image} />
       <meta property="og:url" content={pathname} />
       <meta property="og:type" content={type} />
-      <meta property="twitter:title" content={props.title} />
-      <meta property="twitter:description" content={props.description} />
-      <meta property="twitter:image" content={props.image} />
-      <meta property="twitter:url" content={pathname} />
+      <meta name="twitter:card" content="summary_large_image" />
+      <meta name="twitter:title" content={props.title} />
+      <meta name="twitter:description" content={props.description} />
+      <meta name="twitter:image" content={props.image} />
+      <meta name="twitter:url" content={pathname} />
       <meta name="robots" content={robots} />
       <meta name="revisit-after" content={props.revisitAfter} />
     </Helmet>
