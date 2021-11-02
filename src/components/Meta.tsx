@@ -27,7 +27,7 @@ export default function Meta(iprops: Partial<Props>) {
     iprops.description ??
     'ICT Student, Full Stack Web Developer, and Systems Administrator with a flair for creating elegant solutions in the least amount of time and creative cloud computing. See my work, who I have worked for in the past, along with my expierence in fields.';
 
-  props.image = iprops.image ?? 'favicon.ico';
+  props.image = iprops.image ?? 'banner.png';
   props.revisitAfter = iprops.revisitAfter ?? '7 days';
 
   const robots = `${iprops.noindex ? 'noindex' : 'index'}, ${
