@@ -42,7 +42,7 @@ const Home: React.FC = () => {
             loop={Infinity}
             wrapper="h3"
           />
-          <br />A Lập trình viên đam mê với sự tinh tế để tạo ra sự thanh lịch
+          <br />Một lập trình viên đam mê với sự tinh tế để tạo ra sự thanh lịch
            giải pháp tiết kiệm thời gian nhất và điện toán đám mây sáng tạo
         </p>
       </div>
