@@ -42,7 +42,7 @@ const Contact: React.FC = () => {
     <Content>
       <Meta
         title="Contact"
-        description="If you ever need to contact me for business, or just to say hello, this page has the information on how to contact me"
+        description="Nếu bạn cần liên hệ với tôi vì công việc kinh doanh hoặc chỉ để chào hỏi, trang này có thông tin về cách liên hệ với tôi"
       />
       <div className={styles['info']}>
         <h1 className={styles['title']}>
@@ -60,7 +60,7 @@ const Contact: React.FC = () => {
           value="Click Me!"
           href="https://discord.gg/h6UjhXuduN"
         />
-        <Card title="Email" value="business@undefine-dev.tech" />
+        <Card title="Email" value="alan45walker12@gmail.com" />
         <Card
           title="Github"
           value="Click Me!"
