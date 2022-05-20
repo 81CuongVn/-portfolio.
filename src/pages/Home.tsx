@@ -42,8 +42,8 @@ const Home: React.FC = () => {
             loop={Infinity}
             wrapper="h3"
           />
-          <br />A Passionate Programmer with a flair for creating elegant
-          solutions in the least amount of time and creative cloud computing
+          <br />A Lập trình viên đam mê với sự tinh tế để tạo ra sự thanh lịch
+           giải pháp tiết kiệm thời gian nhất và điện toán đám mây sáng tạo
         </p>
       </div>
     </Content>
