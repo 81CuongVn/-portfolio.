@@ -17,7 +17,7 @@ const Home: React.FC = () => {
       </div>
       <div className={styles['center']}>
         <h1 className={styles['name']}>
-          <span className={colors['text-blue']}>Undefine</span>{' '}
+          <span className={colors['text81CuongVn81CuongVn</span>{' '}
           <span className={colors['text-green']}>Development</span>
         </h1>
       </div>
