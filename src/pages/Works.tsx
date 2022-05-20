@@ -39,7 +39,7 @@ const Works: React.FC = () => {
     <Content>
       <Meta
         title="Works and Experience"
-        description="See my past work and experiences in the fields."
+        description="Xem công việc trước đây và kinh nghiệm của tôi trong các lĩnh vực."
       />
       <div className={styles['info']}>
         <h1 className={styles['title']}>
@@ -52,7 +52,7 @@ const Works: React.FC = () => {
       </div>
       <div className={styles['container']}>
         <Card
-          href="https://xetha-bot.me/"
+          href="https://milrato.dev/"
           logo="https://xetha-bot.me/logo.webp"
           title="Xetha"
           subtitle="WIP"
@@ -60,7 +60,7 @@ const Works: React.FC = () => {
           date="Dec 2020 - Present"
         />
         <Card
-          href="https://www.youtube.com/c/ZeroSync"
+          href="https://www.youtube.com/channel/UCNE4yy2XWJMk1og08Oxp6wQ"
           logo="https://cdn.discordapp.com/guilds/729919498076946463/users/603948445362946084/avatars/a_2933a8366e6565c37159e8b482194175.gif?size=256"
           title="ZeroSync Content Creator"
           role="Manager"
@@ -81,14 +81,14 @@ const Works: React.FC = () => {
           date="Sept 2020 - Nov 2020"
         />
         <Card
-          href="https://www.youtube.com/channel/UCJ8RtaYEROGEMdyUAqgO-9g"
-          logo="https://pbs.twimg.com/profile_images/1422090458675679235/aIbz-uKK.jpg"
+          href="https://www.youtube.com/channel/UCNE4yy2XWJMk1og08Oxp6wQ"
+          logo="https://yt3.ggpht.com/_G42q9sPVgEvQepfdRxT4JwKWjFUmxzAP-uQ1vStUEiqHdG61jvSEQ1eiEctRMMdmHhC2dvcaw=s48-c-k-c0x00ffffff-no-rj"
           title="Trimix Content Creator"
           role="Management / Developer"
           date="July 2020 - Dec 2020"
         />
         <Card
-          href="https://discord.com/invite/auc"
+          href="https://discord.gg/h6UjhXuduN"
           logo="https://play-lh.googleusercontent.com/8ddL1kuoNUB5vUvgDVjYY3_6HwQcrg1K2fd_R8soD-e2QYj8fT9cfhfh3G0hnSruLKec"
           title="Among Us Community"
           role="Developer"
