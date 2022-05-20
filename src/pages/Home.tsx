@@ -26,9 +26,9 @@ const Home: React.FC = () => {
           <Typical
             steps={[
               1000,
-              'Welcome to my portfolio !',
+              'Welcome to my community 81CuongVn !',
               1000,
-              'I am an ICT Student',
+              'I am an IT Student in VietNamese',
               1000,
               'I am a Full Stack Web Developer',
               1000,
