@@ -58,13 +58,13 @@ const Contact: React.FC = () => {
         <Card
           title="Discord"
           value="Click Me!"
-          href="https://discord.gg/7Xuy3wgWZu"
+          href="https://discord.gg/cuongdola"
         />
         <Card title="Email" value="business@undefine-dev.tech" />
         <Card
           title="Github"
           value="Click Me!"
-          href="https://github.com/oadpoaw"
+          href="https://github.com/81CuongVn"
         />
       </div>
     </Content>
