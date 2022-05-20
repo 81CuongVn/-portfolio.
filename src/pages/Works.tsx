@@ -47,7 +47,7 @@ const Works: React.FC = () => {
         </h1>{' '}
         <br />
         <small className={styles['description']}>
-          See my past work and experiences in the fields
+      Xem công việc trước đây và kinh nghiệm của tôi trong các lĩnh vực
         </small>
       </div>
       <div className={styles['container']}>
@@ -62,7 +62,7 @@ const Works: React.FC = () => {
         <Card
           href="https://www.youtube.com/channel/UCNE4yy2XWJMk1og08Oxp6wQ"
           logo="https://cdn.discordapp.com/guilds/729919498076946463/users/603948445362946084/avatars/a_2933a8366e6565c37159e8b482194175.gif?size=256"
-          title="ZeroSync Content Creator"
+          title="Tô Thanh Cường"
           role="Manager"
           date="May 2021 - Present"
         />
@@ -83,7 +83,7 @@ const Works: React.FC = () => {
         <Card
           href="https://www.youtube.com/channel/UCNE4yy2XWJMk1og08Oxp6wQ"
           logo="https://yt3.ggpht.com/_G42q9sPVgEvQepfdRxT4JwKWjFUmxzAP-uQ1vStUEiqHdG61jvSEQ1eiEctRMMdmHhC2dvcaw=s48-c-k-c0x00ffffff-no-rj"
-          title="Trimix Content Creator"
+          title="Tô Thanh Cường"
           role="Management / Developer"
           date="July 2020 - Dec 2020"
         />
